@@ -1,0 +1,152 @@
+.page {
+    width: 70%;
+    height: auto;
+    margin: 30px auto;
+    border: 1px solid #67676729;
+    font-family: sans-serif;
+    background-color: #F7F7F7;
+    
+}
+.list {
+    color:#00A5EC;
+}
+#heading {
+    color: black;
+    padding-top: 30px;
+    height: 60px;
+    background-color:#FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 80px;
+    border: 1px solid #7B7B7B29;
+}
+.mainindex {
+    width: 100%;
+    height: 800px;
+    margin-top: 100px;
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: 260px 256px 260px;
+    grid-template-rows: 250px 250px;
+    gap: 2em;
+}
+.mainlistbox {
+    font-weight: bold;
+    width: 100%;
+    height: 250px;
+    border: 1px solid #EDEDED;
+    background-color:#FFFFFF;
+    border-radius: 5px;
+}
+.mainlistbox h3{
+    height: 20px;
+    padding-left: 5px;
+    color:#00A5EC ;
+}
+.input {
+    word-spacing: 3px;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+.add-button {
+    position: absolute;
+    top: 150px;
+    right: 250px;
+    display:flex; 
+    justify-content: space-between;
+    align-items: center; 
+    height: 50px;
+    width: 170px;
+    color: #00A5EC;
+}
+div > h3 {
+    font-size: 22px;
+    font-weight: 300;
+    color: black;
+}
+a {
+    text-decoration: none;
+}
+.back {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    color: black;
+    position: relative;
+    top: 10px;
+    left: 20%;
+    height: 80px;
+}
+.add-button-page3 {
+    display: flex;
+    width: 140px;
+    height: 100px;
+    justify-content: space-between;
+    color: black;
+    position: relative;
+    bottom: 73px;
+    left: 40%;
+}
+.closebutton {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(75, 73, 73);
+    color: #FFFFFF;
+    font-size: 19px;
+    font-weight: 600;
+    border-radius: 50%;
+    text-align: center;
+}
+.add-logo {
+    font-size: 30px;
+}
+.mainlistbox:hover {
+    box-shadow: 0 0 8px 8px gray;
+}
+.textarea {
+    width: 80%;
+    height: 20px;
+    color: gray;
+    border: 2px solid gray;
+    clear: both;
+    display: block;
+    margin-top: 50px;
+    margin-left: 10px;
+    padding-top: 5px;
+}
+@media only screen and (min-width:750px) and (max-width:1200px)
+{   .page {
+    height: 1500px;
+}
+   .mainindex{
+    grid-template-columns:220px 220px;
+    margin-left: 50px;
+   }
+   #heading {
+    display: flex;
+   }
+}
+@media only screen and (min-width:320px) and (max-width:750px)
+{   .page {
+    height: 1500px;
+}
+   .mainindex{
+    grid-template-columns:220px;
+    margin-left: 5px;
+   }
+   .add-button {
+    flex-direction: row-reverse;
+   }
+   .add-button h3 {
+    visibility: hidden;
+   }
+   .back span {
+    visibility: hidden;
+   }
+   .add-button-page3 span {
+    visibility: hidden;
+   }
+}

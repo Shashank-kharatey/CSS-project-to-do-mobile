@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/42c87fb2dd.js" crossorigin="anonymous"></script>
+    <title>CSS Project page4</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .back-logo {
+            font-size: 30px;
+            position: relative;
+            bottom: 6px;
+        }
+        .back {
+            width: 100px;
+        }
+        .add-logo {
+            position: relative;
+            bottom: 6px;
+            color: #00A5EC;
+        }
+        .mainlistbox {
+            position: relative;
+            bottom: 100px;
+            left: 20%;
+            width: 35%;
+            font-size: 20px;
+            background-color: #aba7a7;
+            border: 1px solid gray;
+        }
+        .page3mainindex {
+            width: 100%;
+            height: 800px;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+        .mainlistbox h3 {
+            height: 10px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .pg4fixed {
+            position: fixed;
+            top: 300px;
+            left: 33%;
+            width: 45%;
+            height: 260px;
+            background-color: white;
+            border: 1px solid #EDEDED;
+            border-radius: 10px;
+        }
+        .pg4fixed h3 {
+            font-weight: bold;
+            width: 250px;
+            text-align: center;
+        }
+        .pg4fixed h2 {
+            text-align: center;
+            width: 130px;
+            position: relative;
+            left: 40%;
+            top: 10%;
+            border: 1px solid black;
+        }
+        .page {
+            filter: grayscale(100%);
+            background-color:#aea8a8 ;
+        }
+        #heading {
+            background-color: #c1bdbd;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div id="heading">Tasks <span class="list"> List </span></div>
+        <div class="page3mainindex"> 
+            <div class="back">
+                <i class="fa-solid fa-circle-arrow-left back-logo"></i><span> BACK
+            </div>
+            <div class="add-button-page3">
+                <i class="fa-solid fa-circle-plus add-logo"></i>
+                <span>Add new task</span>
+            </span>
+            </div>
+            <div class="mainlistbox">
+                <h3>Trip to Paris </h3>
+                <hr color="gray">
+                <div class="input">
+                <input type="checkbox" checked > <span style="color: #C2C2C2;text-decoration: line-through;"> Visit Church</span>
+                <br>
+                <br>
+                <input type="checkbox" > <span style="color: #5d5a5a;">Shopping </span>
+            </div>
+        </div>          
+    </div>
+    <div class="pg4fixed">
+        <div class="closebutton">&times;</div>
+        <h3>Add new Task</h3>
+        <hr>
+        <span class="textarea">Visit famous Places</span>
+        <h2> Add Items</h2>
+    </div>
+</body>
+</html>
